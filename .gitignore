@@ -1,0 +1,6 @@
+# Generated files, dependencies and secrets (if added later)
+node_modules/
+dist/
+.env
+*.log
+.DS_Store

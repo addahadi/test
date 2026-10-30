@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple study task tracker for learning Git and GitHub." />
+  <title>Study Task Tracker | Git Workshop</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="site-header">
+      <div class="eyebrow">GIT & GITHUB WORKSHOP · BEGINNERS</div>
+      <h1>Study Task Tracker</h1>
+      <p class="subtitle">Manage today's tasks, one small step at a time.</p>
+    </header>
+
+    <section class="panel" aria-labelledby="add-task-heading">
+      <h2 id="add-task-heading">Add a task</h2>
+      <form id="task-form" class="task-form">
+        <label for="task-input" class="sr-only">New task name</label>
+        <input id="task-input" type="text" placeholder="e.g. Review Git branches" maxlength="90" required autocomplete="off" />
+        <button type="submit" class="primary-btn">+ Add task</button>
+      </form>
+      <p class="hint">Tip: Add tasks, mark them complete, or remove them. Your changes stay in this browser.</p>
+    </section>
+
+    <section class="panel tasks-panel" aria-labelledby="task-list-heading">
+      <div class="section-heading">
+        <h2 id="task-list-heading">Your tasks</h2>
+        <span id="task-count" class="count-badge">0 remaining</span>
+      </div>
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+      <p id="empty-state" class="empty-state" hidden>All caught up. Add a task to get started!</p>
+    </section>
+
+    <footer class="footer">Made for a Git & GitHub live workshop · Open in VS Code</footer>
+  </main>
+</body>
+</html>
